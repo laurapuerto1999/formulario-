@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="formulario" action="">
+            <h1>Create Account</h1>
+            <div id="input-registro" class="input-registro">
+                <label for="username">Nombre</label>
+                <div class="input-wrapper">
+                    <input id="username" name="username" type="text">
+                    <img class="icono-error" src="./images/error-icon.svg" alt="">
+                    <img class="icono-success" src="./images/success-icon.svg" alt="">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-registro">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <input id="email" name="email" type="email">
+                    <img class="icono-error" src="./images/error-icon.svg" alt="">
+                    <img class="icono-success" src="./images/success-icon.svg" alt="">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-registro">
+                <label for="password">Clave</label>
+                <div class="input-wrapper">
+                    <input id="password" name="password" type="password">
+                    <img class="icono-error" src="./images/error-icon.svg" alt="">
+                    <img class="icono-success" src="./images/success-icon.svg" alt="">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-registro">
+                <label for="passwordConfirm">Confirme su clave</label>
+                <div class="input-wrapper">
+                    <input id="passwordConfirm" name="passwordConfirm" type="password">
+                    <img class="icono-error" src="./images/error-icon.svg" alt="">
+                    <img class="icono-success" src="./images/success-icon.svg" alt="">
+                </div>
+                <div class="error"></div>
+            </div>
+            <button type="button" onclick="validarFormulario()">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
